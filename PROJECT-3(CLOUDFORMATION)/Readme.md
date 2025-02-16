@@ -22,7 +22,7 @@ Before deploying this project, make sure you have:
 - **CloudFormation template** stored in your GitHub repository  
 
 ### **2️⃣ Clone the Repository**  
-```bash
+
 git clone https://github.com/your-github-repo/contact-list-app.git
 cd contact-list-app
 
