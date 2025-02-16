@@ -15,17 +15,17 @@ Before deploying this project, make sure you have:
 
 ### 2️⃣ Clone the Repository  
 Run the following commands to clone the repository and navigate to the project folder:  
-```bash
+
 git clone https://github.com/your-github-repo/contact-list-app.git
-cd contact-list-app```
+cd contact-list-app
 
 ### 3️⃣ Deploy Using CloudFormation
 Run the following command to create the stack:
 
-```bash
+
 aws cloudformation create-stack --stack-name ContactListApp \
     --template-body file://cloudformation-template.yaml \
-    --capabilities CAPABILITY_IAM```
+    --capabilities CAPABILITY_IAM
 	
 ### 4️⃣ Check Deployment Status
 Monitor the stack creation process in the AWS Console under CloudFormation → Stacks.
@@ -34,8 +34,8 @@ Monitor the stack creation process in the AWS Console under CloudFormation → S
 Once the deployment is complete, retrieve the Load Balancer URL from the output section of CloudFormation and access it via a browser:
 
 
-```bash
-echo "Your application is available at: http://$(aws cloudformation describe-stacks --stack-name ContactListApp --query "Stacks[0].Outputs[?OutputKey=='LoadBalancerDNSName'].OutputValue" --output text)"```
+
+echo "Your application is available at: http://$(aws cloudformation describe-stacks --stack-name ContactListApp --query "Stacks[0].Outputs[?OutputKey=='LoadBalancerDNSName'].OutputValue" --output text)"
 
 🛠 Technologies Used
 
