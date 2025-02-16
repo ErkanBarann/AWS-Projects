@@ -10,6 +10,7 @@ Projects are organized into separate folders, and each folder contains its own `
 |---|-----------------|-------------|
 | 1 | Flask Deployment - Auto Scaling & Load Balancer | Deploying a Flask-based Python application on AWS using EC2, ALB, and Auto Scaling Group. |
 | 2 | Wordpress on RDS | Deploying a WordPress application using Amazon RDS for database management. |
+| 3 | Scalable Contact List App with AWS CloudFormation | Deploying a contact list application using EC2, RDS (MySQL), ALB, Auto Scaling, and CloudFormation.
 
 ## 💡 How to Use
 1. Click on a project to view detailed documentation.
